@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Root PresetName="Custom" MajorVersion="1" MinorVersion="8">
-	<KeyboardLayout>en-GB</KeyboardLayout>
+	<KeyboardLayout>en-US</KeyboardLayout>
 	<LockedDevice>{NoDevice}</LockedDevice>
 	<MouseXMode Value="" />
 	<MouseXDecay Value="1" />
@@ -515,11 +515,11 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</UI_Down>
 	<UI_Left>
-		<Primary Device="Keyboard" Key="Key_LeftArrow" />
+		<Primary Device="Keyboard" Key="Key_Delete" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</UI_Left>
 	<UI_Right>
-		<Primary Device="Keyboard" Key="Key_RightArrow" />
+		<Primary Device="Keyboard" Key="Key_PageDown" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</UI_Right>
 	<UI_Select>
@@ -531,11 +531,11 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</UI_Back>
 	<CycleNextPanel>
-		<Primary Device="Keyboard" Key="Key_PageDown" />
+		<Primary Device="Keyboard" Key="Key_RightArrow" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</CycleNextPanel>
 	<CyclePreviousPanel>
-		<Primary Device="Keyboard" Key="Key_Delete" />
+		<Primary Device="Keyboard" Key="Key_LeftArrow" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</CyclePreviousPanel>
 	<MouseHeadlook Value="0" />
@@ -603,8 +603,8 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamYawRight>
 	<CamTranslateYAxis>
-		<Binding Device="068EC010" Key="Joy_RZAxis" />
-		<Inverted Value="0" />
+		<Binding Device="068EC010" Key="Joy_RYAxis" />
+		<Inverted Value="1" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateYAxis>
 	<CamTranslateForward>
@@ -616,7 +616,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamTranslateBackward>
 	<CamTranslateXAxis>
-		<Binding Device="068EC010" Key="Joy_RYAxis" />
+		<Binding Device="068EC010" Key="Joy_RZAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateXAxis>
@@ -665,6 +665,12 @@
 		<ToggleOn Value="0" />
 	</ToggleDriveAssist>
 	<DriveAssistDefault Value="0" />
+	<MouseBuggySteeringXMode Value="" />
+	<MouseBuggySteeringXDecay Value="1" />
+	<MouseBuggyRollingXMode Value="" />
+	<MouseBuggyRollingXDecay Value="1" />
+	<MouseBuggyYMode Value="" />
+	<MouseBuggyYDecay Value="1" />
 	<SteeringAxis>
 		<Binding Device="068EC010" Key="Joy_XAxis" />
 		<Inverted Value="0" />
@@ -679,8 +685,8 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</SteerRightButton>
 	<BuggyRollAxisRaw>
-		<Binding Device="{NoDevice}" Key="" />
-		<Inverted Value="1" />
+		<Binding Device="068EC010" Key="Joy_RZAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</BuggyRollAxisRaw>
 	<BuggyRollLeftButton>
@@ -777,6 +783,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</BuggyToggleReverseThrottleInput>
+	<BuggyThrottleIncrement Value="0.00000000" />
 	<IncreaseSpeedButtonMax>
 		<Primary Device="Keyboard" Key="Key_8" />
 		<Secondary Device="{NoDevice}" Key="" />
